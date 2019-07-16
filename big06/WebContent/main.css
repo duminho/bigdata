@@ -1,0 +1,92 @@
+@charset "UTF-8";
+#total{
+	width: 100px;
+	height: 20px;
+}
+#bg{
+	width: 1200px;
+	height: 900px;
+	background-color: yellow; 
+}
+#ic{
+	background-image: url(G1.PNG);
+	width: 750px;
+	height: 400px;
+	margin-left: 200px;
+	margin-top: 40px;
+	font-size: 10px;
+}
+#icc{
+	background-image: url(G2.PNG);
+	width: 950px;
+	height: 300px;
+	margin-left: 10px;
+	margin-top: 40px;
+	font-size: 10px;
+}
+#side{
+	padding-top: 10px;
+}
+#side li{
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 50px;
+	padding-left: 25px;
+	padding-top: 10px;
+}
+#side li:nth-child(2n+1) {
+	background: lime;
+}
+#side li:nth-child(2n) {
+	background: green;
+}
+#side li:first-child {
+	margin-top: 20px;
+	border-radius: 20px 20px 0 0;
+}
+#side li:last-child {
+	border-radius: 0 0 20px 20px;
+}
+a {
+	text-decoration: underline;
+	font-family: 굴림;
+	font-size: 20px;
+	color: blue;
+	font-weight: lighter;
+}
+a:hover {
+	text-decoration: none;
+	font-family: 궁서;
+	font-size: 22px;
+	color: white;
+	font-weight: bold;
+	background-color: black;
+}
+#page{
+	padding-left: 200px;
+	padding-top: 30px;
+}
+#side2 {
+	top: 160px;
+	right: 460px;
+	position: fixed;
+	width: 200px;
+	height: 150px;
+	background: lime;
+	color: blue;
+	border-top: 5px solid aqua;
+	border-bottom: 10px double white;
+	border-radius: 10px 100px;
+}
+
+input[type = "text"]{
+	margin-left: 10px;
+	width: 200px;
+	height: 20px;
+}
+#content{
+	padding-left: 200px;
+	padding-top: 50px;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function phon() {
+		var name = document.getElementById("name");
+		var tel = document.getElementById("tel");
+		var data1 = name.value;
+		var data2 = tel.value;
+		
+		if(data2.length>=0){
+			location.href ="js01.jsp?name="+data1+"&tel="+data2;
+		}else{
+			alert("전화 번호를 입력해주세요.")
+			location.href ="js13.html";
+		}
+		
+	}
+</script>
+</head>
+<body>
+	<h1>본인인증</h1>
+	이름:<input type="text" name="name"id="name"><br>
+	전화번호:<input type="text" name="tel"id="tel"><br>
+	<button type="button"onclick="phon()">인증</button>
+</body>
+</html>

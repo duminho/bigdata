@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	cont = 0;
+	
+	function plus() {
+		cont++;
+		console.log("현재 카운트값"+cont);
+	}
+	function minus() {
+		cont--
+		console.log("현재 카운트값"+cont);
+	}
+	function reset() {
+		cont=0;
+		console.log("현재 카운트값"+cont);
+	}
+</script>
+</head>
+<body>
+	<h1>증감식</h1>
+	감소 버튼:<button type="button" onclick="minus()">감소</button><br>
+	증가 버튼:<button type="button" onclick="plus()">증가</button><br>
+	초기화 버튼:<button type="button" onclick="reset()">초기화</button>
+</body>
+</html>

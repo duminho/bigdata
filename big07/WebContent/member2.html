@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#total{
+		
+		margin-left: 700px;
+		margin-top: 100px;
+	}
+	a{
+		margin-left: 50px;
+	}
+	input[type = "text"] {
+		width: 250px;
+		height: 30px;
+		font-size: 20px;
+	}
+	input[type = "submit"] {
+		width: 400px;
+		height: 50px;
+		font-size: 20px;
+		color: white;
+		background-color: lime;
+	}
+	h1{
+		font-size: 20px;
+	}
+</style>
+</head>
+<body>
+	<!-- a, action은 클라이언트의 요청: 주소부분에 남는다. -->
+	<!--<a href="member.jsp">단순한 링크 연결</a> 클라이언트가 요청해서 서버가 주소를 찾음 -->
+	<div id="total">
+	<a href="https://www.naver.com/"><img src="naver.PNG" width="250" height="60"></a>
+	<br>
+	<br>
+	<form action="member2.jsp"><!-- 넘기고 싶은 데이터를 다 폼에 넣어라 -->
+		<h1>아이디:</h1> 
+		<input type="text" name="id" placeholder="naver.com"><br>
+		<h1>비밀번호:</h1> 
+		<input type="text" name="pw"><br>
+		<h1>비밀번호 확인:</h1> 
+		<input type="text" name="pw1"><br>
+		<h1>이름:</h1> 
+		<input type="text" name="name"><br>
+		<h1>생년월일:</h1> 
+		<input type="text1" name="day" placeholder="년(4자)"> 
+				<select name="day2">
+					<option value="1월">1월</option>
+					<option value="2월">2월</option>
+					<option value="3월">3월</option>
+					<option value="4월">4월</option>
+					<option value="5월">5월</option>
+					<option value="6월">6월</option>
+					<option value="7월">7월</option>
+					<option value="8월">8월</option>
+					<option value="9월">9월</option>
+					<option value="10월">10월</option>
+					<option value="11월">11월</option>
+					<option value="12월">12월</option>
+				</select>
+				<input type="text1" name="day3" placeholder="일">
+		<br>
+		<h1>성별:</h1> 
+		<select name="gender">
+					<option value="남자">남자</option>
+					<option value="여자">여자</option>
+				</select>
+		<br>
+		<h1>이메일:</h1> 
+		<input type="text" name="email"><br>
+		<h1>전화번호:</h1> 
+		<input type="text" name="tel"><br><br>
+		<input type="submit" value="가입하기">
+	</form>
+	</div>
+</body>
+</html>

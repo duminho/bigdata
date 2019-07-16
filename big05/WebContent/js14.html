@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function title01() {
+		var title = document.getElementById("title");
+		var data=title.value;
+		location.href ="js02.jsp?id="+data;
+	}
+	
+</script>
+</head>
+<body>
+<h1>게시판</h1>
+게시판 입력:<input type="text" name="title" id="title"><br>
+<button type="button"onclick="title01()">전송</button>
+</body>
+</html>
